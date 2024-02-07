@@ -36,7 +36,8 @@ c.content.pdfjs = True
 
 c.scrolling.bar = "always"
 
-c.tabs.new_position.unrelated = "next"
+c.tabs.new_position.unrelated = "last"
+c.tabs.new_position.related = "last"
 c.tabs.padding = {"bottom": 3, "left": 5, "right": 5, "top": 3}
 c.tabs.position = "left"
 c.tabs.width = 150
