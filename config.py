@@ -50,8 +50,9 @@ c.url.searchengines = {
     "re": "https://www.reddit.com/r/{}",
     "yt": "https://www.youtube.com/results?search_query={}",
     "np": "https://www.youtube.com/results?search_query={}",
-    "np": "https://search.nixos.org/packages?channel=unstable&from=0&size=52&sort=relevance&type=packages&query={}",
+    "nm": "https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}",
     "nc": "https://mynixos.com/search?q={}",
+    "no": "https://search.nixos.org/options?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}",
 }
 c.url.start_pages = "https://qutebrowser.org/"
 
