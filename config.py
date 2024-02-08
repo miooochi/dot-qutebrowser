@@ -44,7 +44,15 @@ c.tabs.width = 150
 c.tabs.show = "always"
 
 c.url.default_page = "https://google.com/"
-c.url.searchengines = {"DEFAULT": "https://google.com/search?q={}"}
+c.url.searchengines = {
+    "DEFAULT": "https://google.com/search?q={}",
+    "aw": "https://wiki.archlinux.org/?search={}",
+    "re": "https://www.reddit.com/r/{}",
+    "yt": "https://www.youtube.com/results?search_query={}",
+    "np": "https://www.youtube.com/results?search_query={}",
+    "np": "https://search.nixos.org/packages?channel=unstable&from=0&size=52&sort=relevance&type=packages&query={}",
+    "nc": "https://mynixos.com/search?q={}",
+}
 c.url.start_pages = "https://qutebrowser.org/"
 
 c.colors.webpage.bg = "white"
@@ -55,10 +63,13 @@ c.colors.webpage.darkmode.policy.images = "smart"
 c.colors.webpage.darkmode.threshold.background = 0
 
 # Bindings for normal mode
-config.bind('"b"', '":w:')
 config.unbind("d")
-config.bind("n", "opencccccctdurbuhejtbdklteejldnuhdjeiledruudkrle")
 config.bind("x", "tab-close")
+config.bind(
+    "M", "hint links spawn mpv {hint-url}"
+)  # spawn mpv to play video from the selected url
+config.bind("t", "set-cmd-text -s :open -t")  # spawn mpv for video
+config.bind("st", "config-cycle tabs.show always never")  # toggle tabs
 
 # Theme
 import catppuccin
