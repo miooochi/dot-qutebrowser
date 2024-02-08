@@ -64,6 +64,7 @@ c.colors.webpage.darkmode.threshold.background = 0
 
 # Bindings for normal mode
 config.unbind("d")
+config.unbind("D")
 config.bind("x", "tab-close")
 config.bind(
     "M", "hint links spawn mpv {hint-url}"
