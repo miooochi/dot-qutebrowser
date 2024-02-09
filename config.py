@@ -72,6 +72,8 @@ config.bind(
 )  # spawn mpv to play video from the selected url
 config.bind("t", "set-cmd-text -s :open -t")  # spawn mpv for video
 config.bind("st", "config-cycle tabs.show always never")  # toggle tabs
+config.bind("aa", "set-cmd-text -s :quickmark-add {url} ")  # quickmark-add
+config.bind("am", "set-cmd-text -s :bookmark-add {url}")  # bookmark-add
 
 # Theme
 import catppuccin
