@@ -49,8 +49,7 @@ c.url.searchengines = {
     "aw": "https://wiki.archlinux.org/?search={}",
     "re": "https://www.reddit.com/r/{}",
     "yt": "https://www.youtube.com/results?search_query={}",
-    "np": "https://www.youtube.com/results?search_query={}",
-    "nm": "https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}",
+    "np": "https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}",
     "nc": "https://mynixos.com/search?q={}",
     "no": "https://search.nixos.org/options?channel=unstable&from=0&size=50&sort=relevance&type=packages&query={}",
 }
@@ -70,7 +69,6 @@ config.bind("x", "tab-close")
 config.bind(
     "M", "hint links spawn mpv {hint-url}"
 )  # spawn mpv to play video from the selected url
-config.bind("t", "set-cmd-text -s :open -t")  # spawn mpv for video
 config.bind("st", "config-cycle tabs.show always never")  # toggle tabs
 config.bind("aa", "set-cmd-text -s :quickmark-add {url} ")  # quickmark-add
 config.bind("am", "set-cmd-text -s :bookmark-add {url}")  # bookmark-add
