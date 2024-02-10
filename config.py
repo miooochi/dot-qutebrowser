@@ -32,6 +32,7 @@ config.set(
     "file:///home/kev/.local/share/qutebrowser/userscripts/*",
 )
 
+c.content.javascript.clipboard = "access"
 c.content.pdfjs = True
 
 c.scrolling.bar = "always"
