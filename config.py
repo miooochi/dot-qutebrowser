@@ -70,7 +70,7 @@ config.bind("x", "tab-close")
 config.bind(
     "M", "hint links spawn mpv {hint-url}"
 )  # spawn mpv to play video from the selected url
-config.bind("st", "config-cycle tabs.show always never")  # toggle tabs
+config.bind("tt", "config-cycle tabs.show always never")  # toggle tabs
 config.bind("aa", "set-cmd-text -s :quickmark-add {url} ")  # quickmark-add
 config.bind("A", "set-cmd-text -s :bookmark-add")  # bookmark-add
 
