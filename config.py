@@ -32,8 +32,13 @@ config.set(
     "file:///home/kev/.local/share/qutebrowser/userscripts/*",
 )
 
+# enable clipboard
 c.content.javascript.clipboard = "access"
 c.content.pdfjs = True
+
+# enable notification
+c.content.notifications.enabled = True
+c.content.notifications.presenter = "libnotify"
 
 c.scrolling.bar = "always"
 
