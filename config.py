@@ -72,6 +72,9 @@ c.colors.webpage.darkmode.threshold.background = 0
 config.unbind("d")
 config.unbind("D")
 config.unbind("q")
+config.unbind("m")
+config.unbind("M")
+config.unbind("h")
 config.bind("x", "tab-close")
 config.bind(
     "qv", "hint links spawn mpv {hint-url} --hwdec=auto --audio-device=auto"
@@ -80,8 +83,12 @@ config.bind(
     "qa", "hint links spawn mpv {hint-url} --hwdec=auto --audio-device=auto --no-video"
 )  # spawn mpv to play audio only from the selected url
 config.bind("tt", "config-cycle tabs.show always never")  # toggle tabs
-config.bind("aa", "set-cmd-text -s :quickmark-add {url} ")  # quickmark-add
-config.bind("A", "set-cmd-text -s :bookmark-add")  # bookmark-add
+config.bind("mm", "cmd-set-text -s :quickmark-add {url}")  # quickmark-add
+config.bind("mM", "cmd-set-text -s :bookmark-add")  # bookmark-add
+config.bind("ml", "cmd-set-text -s :quickmark-load -t")  # quickmark-load
+config.bind("mL", "cmd-set-text -s :bookmark-load -t")  # bookmark-load
+config.bind("mB", ":open -t qute://bookmarks/")  # open qute://bookmarks/
+config.bind("h", ":open -t qute://history/")  # open qute://history/
 
 # Theme
 import catppuccin
