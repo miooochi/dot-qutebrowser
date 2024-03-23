@@ -40,10 +40,15 @@ c.content.pdfjs = True
 c.content.notifications.enabled = True
 c.content.notifications.presenter = "libnotify"
 
+# enable brave browser adblocker
+c.content.blocking.method = "both"
+
+# always show scrollbar
 c.scrolling.bar = "always"
 
 # enable spellcheck
 c.spellcheck.languages = ["en-US"]
+
 
 c.tabs.new_position.unrelated = "last"
 c.tabs.new_position.related = "last"
