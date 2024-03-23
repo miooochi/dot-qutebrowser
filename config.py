@@ -42,6 +42,9 @@ c.content.notifications.presenter = "libnotify"
 
 c.scrolling.bar = "always"
 
+# enable spellcheck
+c.spellcheck.languages = ["en-US"]
+
 c.tabs.new_position.unrelated = "last"
 c.tabs.new_position.related = "last"
 c.tabs.padding = {"bottom": 3, "left": 5, "right": 5, "top": 3}
