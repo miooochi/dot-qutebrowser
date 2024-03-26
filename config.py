@@ -77,12 +77,14 @@ c.colors.webpage.darkmode.policy.images = "smart"
 c.colors.webpage.darkmode.threshold.background = 0
 
 # Bindings for normal mode
+config.unbind("O")
 config.unbind("d")
 config.unbind("D")
 config.unbind("q")
 config.unbind("m")
 config.unbind("M")
 config.unbind("h")
+config.bind("<Ctrl-o>", "cmd-set-text -s :open -t ")
 config.bind("x", "tab-close")
 config.bind(
     "qv", "hint links spawn mpv {hint-url} --hwdec=auto --audio-device=auto"
