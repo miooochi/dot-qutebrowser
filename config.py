@@ -32,6 +32,9 @@ config.set(
     "file:///home/kev/.local/share/qutebrowser/userscripts/*",
 )
 
+# completion
+c.completion.open_categories = ["searchengines", "quickmarks", "bookmarks"]
+
 # enable clipboard
 c.content.javascript.clipboard = "access"
 c.content.pdfjs = True
