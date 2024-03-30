@@ -32,8 +32,12 @@ config.set(
     "file:///home/kev/.local/share/qutebrowser/userscripts/*",
 )
 
-# completion
-c.completion.open_categories = ["searchengines", "quickmarks", "bookmarks"]
+# open_categories
+c.completion.open_categories = ["searchengines", "quickmarks", "bookmarks", "history"]
+
+# history
+c.completion.web_history.max_items = 100
+c.completion.cmd_history_max_items = 100
 
 # enable clipboard
 c.content.javascript.clipboard = "access"
