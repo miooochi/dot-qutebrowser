@@ -33,11 +33,11 @@ config.set(
 )
 
 # open_categories
-c.completion.open_categories = ["searchengines", "quickmarks", "bookmarks", "history"]
+c.completion.open_categories = ["searchengines", "quickmarks", "bookmarks"]
 
 # history
 c.completion.web_history.max_items = 100
-c.completion.cmd_history_max_items = 100
+# c.completion.cmd_history_max_items = 100
 
 # enable clipboard
 c.content.javascript.clipboard = "access"
