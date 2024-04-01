@@ -52,7 +52,6 @@ c.content.blocking.method = "both"
 
 # always show scrollbar
 c.scrolling.bar = "always"
-c.scrolling.smooth = True
 
 # enable spellcheck
 c.spellcheck.languages = ["en-US"]
